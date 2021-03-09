@@ -1,0 +1,33 @@
+{
+  "name": "simple-placeholder-replacer",
+  "version": "1.0.0",
+  "description": "A simple placeholder replacer",
+  "keywords": [
+    "Placeholder",
+    "replacer"
+  ],
+  "author": "Benoit Wauthier <benoit.wauthier@gmail.com>",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "test": "mocha",
+    "test-with-coverage": "nyc mocha"
+  },
+  "pre-commit": [
+    "test",
+    "lint"
+  ],
+  "directories": {
+    "test": "./test"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "mocha": "^8.3.1",
+    "nyc": "^15.1.0",
+    "timekeeper": "^2.2.0"
+  }
+}
