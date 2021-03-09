@@ -18,6 +18,7 @@ const replace = (source, placeholders = {}) => {
         const stringifiedSource = JSON.stringify(source)
         return JSON.parse(replacePlaceholdersImpl(stringifiedSource, placeholders))
     }
+    
     return replacePlaceholdersImpl(source, placeholders)
 }
 
@@ -29,18 +30,11 @@ const replacePlaceholdersImpl = (source, placeholders) => {
     if (placeholders && Object.keys(placeholders).length > 0) {
         for (const key in placeholders) {
             if (placeholders[key] != null) {
-                source = replacePlaceholder(source, key, placeholders[key])
+                source = source.replace(new RegExp(`{{${key}}}`, 'ig'), placeholders[key])
             }
         }
     }
-    return source
-}
 
-const replacePlaceholder = (source, placeholder, value) => {
-    var regEx = new RegExp(`{{${placeholder}}}`, 'ig')
-    if (source.match(regEx)) {
-        source = source.replace(regEx, value)
-    }
     return source
 }
 
