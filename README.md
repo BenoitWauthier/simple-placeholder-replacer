@@ -1,5 +1,5 @@
 # simple-placeholder-replacer
-[![Build Status](https://travis-ci.com/BenoitWauthier/simple-placeholder-replacer.svg?branch=master)](https://travis-ci.org/github/BenoitWauthier/simple-placeholder-replacer)
+[![Build Status](https://travis-ci.com/BenoitWauthier/simple-placeholder-replacer.svg?branch=master)](https://travis-ci.com/github/BenoitWauthier/simple-placeholder-replacer)
 
 A library to replace placeholders in a json/string object. 
 You have to use double curly brackets {{placeholderKey}} to identify the placeholder and proivide a map with pairs of key / value where the key is the name of the placeholder (case doesn't matter) and value is the replacement value for that placeholder.
