@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - node
+
+cache: yarn
+
+install: yarn
+
+jobs:
+  include:
+    - stage: build
+      script: 
+        - yarn test
+        - yarn lint
+        - yarn audit
