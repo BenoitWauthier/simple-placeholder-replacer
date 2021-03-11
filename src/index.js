@@ -39,14 +39,19 @@ const replacePlaceholdersImpl = (source, placeholders) => {
 }
 
 const replaceDateImpl = (source) => {
+    
     // Replace NOW
-    while (match = source.match(/{{NOW([\+,-])?(\d)?([h,H,m,M,s,S])?=?([^}]*)?}}/i)) {
+    var match = source.match(/{{NOW([+,-])?(\d)?([h,H,m,M,s,S])?=?([^}]*)?}}/i)
+    while (match) {
         source = replaceRegExp(source, match, timeUnits, 'h', 'YYYY-MM-DDTHH:mm:ss')
+        match = source.match(/{{NOW([+,-])?(\d)?([h,H,m,M,s,S])?=?([^}]*)?}}/i)
     }
 
     // Replace TODAY
-    while (match = source.match(/{{TODAY([\+,-])?(\d)?([d,D,m,M,y,Y,w,W])?=?([^}]*)?}}/i)) {
+    match = source.match(/{{TODAY([+,-])?(\d)?([d,D,m,M,y,Y,w,W])?=?([^}]*)?}}/i)
+    while (match) {
         source = replaceRegExp(source, match, dateUnits, 'd', 'YYYY-MM-DD')
+        match = source.match(/{{TODAY([+,-])?(\d)?([d,D,m,M,y,Y,w,W])?=?([^}]*)?}}/i)
     }
 
     return source
