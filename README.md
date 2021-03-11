@@ -5,7 +5,7 @@ A library to replace placeholders in a json/string object.
 You have to use double curly brackets {{placeholderKey}} to identify the placeholder and proivide a map with pairs of key / value where the key is the name of the placeholder (case doesn't matter) and value is the replacement value for that placeholder.
 The library can also handle date / date time placeholders that are {{now}} or {{today}} (again case doesn't matter) and that can be configured with the following options :
 
-- a nymber of units to add / subtract to the system date / time 
+- a number of units to add / subtract to the system date / time 
     e.g. {{today+1d}}  -> will cause the library to replace this tag with the system date + one day
     Note that the unit is not mandatory, days will be the unit by default for {{today}} and hours for {{now}}
     
