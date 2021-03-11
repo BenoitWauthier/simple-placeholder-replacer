@@ -8,18 +8,23 @@ The library can also handle date / date time placeholders that are {{now}} or {{
     e.g. {{today+1d}}  -> will cause the library to replace this tag with the system date + one day
     Note that the unit is not mandatory, days will be the unit by default for {{today}} and hours for {{now}}
     Available units for {{today}} are :
+    
         - d / D : days
         - m / M : months
         - y / Y : years
         - w / W : weeks
+        
     Available units for {{now}} are :
+    
         - h / H : hours
         - m / M : minutes
-        - y / Y : seconds
+        - s / S : seconds
+        
 - the desired output format for the date / date time
     e.g. {{now=HH:MM:SS}} -> will output the current time
     Note that the format must be compatible with formats recognized by the moment js library
     Default formats are :
+    
         - {{today}} -> YYYY-MM-DD
         - {{now}}   -> YYYY-MM-DDTHH:MM:SS
 
