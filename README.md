@@ -1,7 +1,14 @@
 # simple-placeholder-replacer
 [![Build Status](https://travis-ci.com/BenoitWauthier/simple-placeholder-replacer.svg?branch=master)](https://travis-ci.com/github/BenoitWauthier/simple-placeholder-replacer)
 [![Coverage Status](https://coveralls.io/repos/github/BenoitWauthier/simple-placeholder-replacer/badge.svg)](https://coveralls.io/github/BenoitWauthier/simple-placeholder-replacer)
+![dependencies Status](https://img.shields.io/david/BenoitWauthier/simple-placeholder-replacer)
+![devDependencies Status](https://img.shields.io/david/dev/BenoitWauthier/simple-placeholder-replacer?label=devDependencies)
 [![Known Vulnerabilities](https://snyk.io/test/github/BenoitWauthier/simple-placeholder-replacer/badge.svg)](https://snyk.io/test/github/BenoitWauthier/simple-placeholder-replacer)
+
+![Npm version](https://img.shields.io/npm/v/simple-placeholder-replacer?label=latest-version)
+![Npm downloads](https://img.shields.io/npm/dm/simple-placeholder-replacer)
+![Last Commit](https://img.shields.io/github/last-commit/BenoitWauthier/simple-placeholder-replacer)
+![Contributors](https://img.shields.io/github/contributors/BenoitWauthier/simple-placeholder-replacer)
 
 A library to replace placeholders in a json/string object. 
 You have to use double curly brackets {{placeholderKey}} to identify the placeholder and proivide a map with pairs of key / value where the key is the name of the placeholder (case doesn't matter) and value is the replacement value for that placeholder.
