@@ -7,6 +7,7 @@
 
 ![Npm version](https://img.shields.io/npm/v/simple-placeholder-replacer?label=latest-version)
 ![Npm downloads](https://img.shields.io/npm/dm/simple-placeholder-replacer)
+![Npm download size](https://img.shields.io/bundlephobia/min/simple-placeholder-replacer)
 ![Last Commit](https://img.shields.io/github/last-commit/BenoitWauthier/simple-placeholder-replacer)
 ![Contributors](https://img.shields.io/github/contributors/BenoitWauthier/simple-placeholder-replacer)
 
