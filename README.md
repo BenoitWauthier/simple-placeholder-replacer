@@ -58,6 +58,14 @@ replacePlaceholders({"myDate": "{{today+1m=DD MM YYYY}}"});
 
 ```
 
+## Release
+
+```
+npm version major / minor / patch
+git push origin ${tagName}
+
+```
+
 ## License
 
 This is licensed under an MIT License. [See details](LICENSE)
