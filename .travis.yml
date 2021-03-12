@@ -13,3 +13,12 @@ jobs:
         - yarn test
         - yarn lint
         - yarn audit
+    - stage: npm release
+      if: tag IS present
+      deploy:
+        provider: npm
+        email: "$NPM_EMAIL"
+        api_key: "$NPM_API_TOKEN"
+        cleanup: true
+        on:
+          tags: true
