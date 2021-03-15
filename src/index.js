@@ -14,6 +14,8 @@ const timeUnits = {
 }
 
 const replace = (source, placeholders = {}) => {
+    if (!source) return source
+
     if (typeof source === "object") {
         const stringifiedSource = JSON.stringify(source)
         return JSON.parse(replacePlaceholdersImpl(stringifiedSource, placeholders))
