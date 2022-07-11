@@ -62,7 +62,7 @@ replacePlaceholders('I want {{myPlaceholder}} to be replaced', {myPlaceholder: '
 
 replacePlaceholders({"myDate": "{{today+1m=DD MM YYYY}}"});
 
---> assulming today is the 11-03-2021 : {"myDate": "11 04 2021"}
+--> assuming today is the 11-03-2021 : {"myDate": "11 04 2021"}
 
 ```
 
