@@ -31,6 +31,6 @@
     "mocha": "10.2.0",
     "nyc": "15.1.0",
     "pre-commit": "1.2.2",
-    "timekeeper": "2.2.0"
+    "timekeeper": "2.3.1"
   }
 }
